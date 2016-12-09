@@ -1,6 +1,11 @@
 # breakout
 Various breakout PCBs for prototyping
 
+## Useful code
+
+- https://github.com/KiCad/kicad-python
+- https://github.com/KiCad/kicad-library-utils
+
 ## Useful info
 
 - [Microchop Packaging Specification](https://www.microchip.com/quality/packaging-specifications)
