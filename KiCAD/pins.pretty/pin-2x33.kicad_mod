@@ -1,10 +1,10 @@
 (module pin-2x33
   (layer F.Cu)
   (tedit 0)
-  (descr "Through hole pin header")
+  (descr "Header pin. 2.54mm pitch. 1mm drills. Shape 2x33")
   (tags "pin header")
   (fp_text reference REF** (at 0 -5.100) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.150))))
-  (fp_text value Pin_Header_Straight_2x33 (at 0 -3.100) (layer F.Fab) (effects (font (size 1 1) (thickness 0.150))))
+  (fp_text value pin-2x33 (at 0 -3.100) (layer F.Fab) (effects (font (size 1 1) (thickness 0.150))))
   (fp_line (start -1.750 -1.750) (end -1.750 83.050) (layer F.CrtYd) (width 0.050))
   (fp_line (start 4.300 -1.750) (end 4.300 83.050) (layer F.CrtYd) (width 0.050))
   (fp_line (start -1.750 -1.750) (end 4.300 -1.750) (layer F.CrtYd) (width 0.050))
