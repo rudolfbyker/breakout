@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/dolf/m/buffer_mcu/pic16f1827_breakout/pic16f1827_breakout.sch</source>
+    <date>Fri 15 Apr 2016 10:29:41 SAST</date>
+    <tool>Eeschema 4.0.2-4+6225~38~ubuntu14.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>pic16f1827_breakout.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>PIC16F1827</value>
+      <footprint>SMD_Packages:SSOP-20</footprint>
+      <libsource lib="dolf_kicad" part="PIC16F1827"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5710A915</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_01X10</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x10</footprint>
+      <libsource lib="conn" part="CONN_01X10"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5710A9F0</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_01X10</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x10</footprint>
+      <libsource lib="conn" part="CONN_01X10"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5710AA57</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X10">
+      <description>Connector 01x10</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X10</fp>
+        <fp>Pin_Header_Angled_1X10</fp>
+        <fp>Socket_Strip_Straight_1X10</fp>
+        <fp>Socket_Strip_Angled_1X10</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dolf_kicad" part="PIC16F1827">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PIC16F1827</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RA2" type="input"/>
+        <pin num="2" name="RA3" type="input"/>
+        <pin num="3" name="RA4" type="input"/>
+        <pin num="4" name="RA5" type="input"/>
+        <pin num="5" name="VSS" type="power_in"/>
+        <pin num="6" name="VSS" type="power_in"/>
+        <pin num="7" name="RB0" type="input"/>
+        <pin num="8" name="RB1" type="input"/>
+        <pin num="9" name="RB2" type="input"/>
+        <pin num="10" name="RB3" type="input"/>
+        <pin num="11" name="RB4" type="input"/>
+        <pin num="12" name="RB5" type="input"/>
+        <pin num="13" name="RB6" type="input"/>
+        <pin num="14" name="RB7" type="input"/>
+        <pin num="15" name="VDD" type="power_in"/>
+        <pin num="16" name="VDD" type="power_in"/>
+        <pin num="17" name="RA6" type="input"/>
+        <pin num="18" name="RA7" type="input"/>
+        <pin num="19" name="RA0" type="input"/>
+        <pin num="20" name="RA1" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="dolf_kicad">
+      <uri>/home/dolf/m/kicad/dolf_kicad.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(P2-Pad3)">
+      <node ref="P2" pin="3"/>
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="2" name="Net-(P2-Pad2)">
+      <node ref="U1" pin="19"/>
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="3" name="Net-(P2-Pad1)">
+      <node ref="U1" pin="20"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="4" name="Net-(P1-Pad10)">
+      <node ref="U1" pin="10"/>
+      <node ref="P1" pin="10"/>
+    </net>
+    <net code="5" name="Net-(P1-Pad9)">
+      <node ref="U1" pin="9"/>
+      <node ref="P1" pin="9"/>
+    </net>
+    <net code="6" name="Net-(P1-Pad8)">
+      <node ref="U1" pin="8"/>
+      <node ref="P1" pin="8"/>
+    </net>
+    <net code="7" name="Net-(P1-Pad7)">
+      <node ref="P1" pin="7"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="8" name="Net-(P2-Pad4)">
+      <node ref="P2" pin="4"/>
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="9" name="Net-(P1-Pad4)">
+      <node ref="P1" pin="4"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="10" name="Net-(P1-Pad3)">
+      <node ref="P1" pin="3"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="11" name="Net-(P1-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="12" name="Net-(P1-Pad1)">
+      <node ref="P1" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="13" name="Net-(P2-Pad5)">
+      <node ref="P2" pin="6"/>
+      <node ref="P2" pin="5"/>
+      <node ref="U1" pin="16"/>
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="14" name="GND">
+      <node ref="P1" pin="5"/>
+      <node ref="P1" pin="6"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="15" name="Net-(P2-Pad10)">
+      <node ref="P2" pin="10"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="16" name="Net-(P2-Pad9)">
+      <node ref="P2" pin="9"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="17" name="Net-(P2-Pad8)">
+      <node ref="P2" pin="8"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="18" name="Net-(P2-Pad7)">
+      <node ref="U1" pin="14"/>
+      <node ref="P2" pin="7"/>
+    </net>
+  </nets>
+</export>

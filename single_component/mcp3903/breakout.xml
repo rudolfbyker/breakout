@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/dolf/m/adc/breakout/breakout.sch</source>
+    <date>Fri 11 Mar 2016 14:58:45 SAST</date>
+    <tool>Eeschema 4.0.2-4+6225~38~ubuntu14.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>breakout.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>MCP3903-I/SS</value>
+      <libsource lib="dolf_kicad" part="MCP3903-I/SS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2C2EA</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>C</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2CBF9</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>CP</value>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2CC4E</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>C</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2CCED</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>CP</value>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2CDE9</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>C</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2CEAC</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>CP</value>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2CFA1</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dolf_kicad" part="MCP3903-I/SS">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP3903-I/SS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AVDD" type="power_in"/>
+        <pin num="2" name="CH0+" type="input"/>
+        <pin num="3" name="CH0-" type="input"/>
+        <pin num="4" name="CH1-" type="input"/>
+        <pin num="5" name="CH1+" type="input"/>
+        <pin num="6" name="CH2+" type="input"/>
+        <pin num="7" name="CH2-" type="input"/>
+        <pin num="8" name="CH3-" type="input"/>
+        <pin num="9" name="CH3+" type="input"/>
+        <pin num="10" name="CH4+" type="input"/>
+        <pin num="11" name="CH4-" type="input"/>
+        <pin num="12" name="CH5-" type="input"/>
+        <pin num="13" name="CH5+" type="input"/>
+        <pin num="14" name="REFINOUT+" type="BiDi"/>
+        <pin num="15" name="REFIN-" type="input"/>
+        <pin num="16" name="AGND" type="power_in"/>
+        <pin num="17" name="DGND" type="power_in"/>
+        <pin num="18" name="nDRA" type="output"/>
+        <pin num="19" name="nDRB" type="output"/>
+        <pin num="20" name="nDRC" type="output"/>
+        <pin num="21" name="OSC1" type="input"/>
+        <pin num="22" name="OSC2" type="input"/>
+        <pin num="23" name="nCS" type="input"/>
+        <pin num="24" name="SCK" type="input"/>
+        <pin num="25" name="SDO" type="output"/>
+        <pin num="26" name="SDI" type="input"/>
+        <pin num="27" name="nRESET" type="input"/>
+        <pin num="28" name="DVDD" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="dolf_kicad">
+      <uri>/home/dolf/m/adc/dolf_kicad.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(C3-Pad1)">
+      <node ref="U1" pin="14"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+    </net>
+    <net code="3" name="Net-(C5-Pad1)">
+      <node ref="U1" pin="28"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="C3" pin="2"/>
+      <node ref="U1" pin="15"/>
+      <node ref="U1" pin="16"/>
+      <node ref="U1" pin="17"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="14" name="Net-(U1-Pad27)">
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="15" name="Net-(U1-Pad22)">
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad21)">
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="19" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="20" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="21" name="Net-(U1-Pad23)">
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="22" name="Net-(U1-Pad24)">
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="23" name="Net-(U1-Pad25)">
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="24" name="Net-(U1-Pad26)">
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="26" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+  </nets>
+</export>

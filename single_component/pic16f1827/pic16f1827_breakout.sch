@@ -1,0 +1,160 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dolf_kicad
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PIC16F1827 U1
+U 1 1 5710A915
+P 5000 2600
+F 0 "U1" H 5300 2650 60  0000 C CNN
+F 1 "PIC16F1827" V 5300 2050 60  0000 C CNN
+F 2 "SMD_Packages:SSOP-20" H 5400 1900 60  0001 C CNN
+F 3 "" H 5400 1900 60  0000 C CNN
+	1    5000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P2
+U 1 1 5710A9F0
+P 6350 3150
+F 0 "P2" H 6350 3700 50  0000 C CNN
+F 1 "CONN_01X10" V 6450 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 6350 3150 50  0001 C CNN
+F 3 "" H 6350 3150 50  0000 C CNN
+	1    6350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P1
+U 1 1 5710AA57
+P 4200 3150
+F 0 "P1" H 4200 3700 50  0000 C CNN
+F 1 "CONN_01X10" V 4300 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0000 C CNN
+	1    4200 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2700 4800 2700
+Wire Wire Line
+	4800 2800 4400 2800
+Wire Wire Line
+	4400 2900 4800 2900
+Wire Wire Line
+	4400 3000 4800 3000
+Wire Wire Line
+	4400 3100 4800 3100
+Wire Wire Line
+	4400 3200 4800 3200
+Wire Wire Line
+	4800 3300 4400 3300
+Wire Wire Line
+	4400 3400 4800 3400
+Wire Wire Line
+	4800 3500 4400 3500
+Wire Wire Line
+	4400 3600 4800 3600
+Wire Wire Line
+	5800 2700 6150 2700
+Wire Wire Line
+	6150 2800 5800 2800
+Wire Wire Line
+	5800 2900 6150 2900
+Wire Wire Line
+	6150 3000 5800 3000
+Wire Wire Line
+	5800 3100 6150 3100
+Wire Wire Line
+	6150 3200 5800 3200
+Wire Wire Line
+	5800 3300 6150 3300
+Wire Wire Line
+	6150 3400 5800 3400
+Wire Wire Line
+	5800 3500 6150 3500
+Wire Wire Line
+	6150 3600 5800 3600
+$Comp
+L GND #PWR01
+U 1 1 5710AC52
+P 4600 3850
+F 0 "#PWR01" H 4600 3600 50  0001 C CNN
+F 1 "GND" H 4600 3700 50  0000 C CNN
+F 2 "" H 4600 3850 50  0000 C CNN
+F 3 "" H 4600 3850 50  0000 C CNN
+	1    4600 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2400 4600 3850
+Connection ~ 4600 3200
+Connection ~ 4600 3100
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5710ACEA
+P 5950 2400
+F 0 "#FLG02" H 5950 2495 50  0001 C CNN
+F 1 "PWR_FLAG" H 5950 2580 50  0000 C CNN
+F 2 "" H 5950 2400 50  0000 C CNN
+F 3 "" H 5950 2400 50  0000 C CNN
+	1    5950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2400 5950 3200
+Connection ~ 5950 3100
+Connection ~ 5950 3200
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5710AD41
+P 4600 2400
+F 0 "#FLG03" H 4600 2495 50  0001 C CNN
+F 1 "PWR_FLAG" H 4600 2580 50  0000 C CNN
+F 2 "" H 4600 2400 50  0000 C CNN
+F 3 "" H 4600 2400 50  0000 C CNN
+	1    4600 2400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
