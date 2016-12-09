@@ -2,3 +2,4 @@
 .idea/
 *.bak
 *.kicad_pcb-bak
+*.pyc
