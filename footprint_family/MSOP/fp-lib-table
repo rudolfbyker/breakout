@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri /home/dolf/personal/breakout/KiCAD/footprints.pretty)(options "")(descr ""))
+  (lib (name pins)(type KiCad)(uri /home/dolf/personal/breakout/KiCAD/pins.pretty)(options "")(descr ""))
+)
